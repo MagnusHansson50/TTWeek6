@@ -16,11 +16,9 @@ def step_impl(context):
     expect(name_field).to_be_visible()
     expect(email_field).to_be_visible()
 
-
 @when(u'jag klickar på "Ta bort" bredvid hennes namn')
 def step_when_delete_contact(context):
     context.friend_page.delete_friend("Lisa", "lisa@example.com")
-
 
 @then(u'ska "Lisa" inte längre visas i listan')
 def step_impl(context):

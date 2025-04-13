@@ -23,7 +23,6 @@ def step_impl(context):
     form = context.page.locator("section.form")
     form.locator("input").nth(1).fill("lisa@nytt.se")
 
-
 @then(u'ska "Lisa" ha e-post "lisa@nytt.se" i listan')
 def step_impl(context):
     name_field, email_field = context.friend_page.friend_is_listed("Lisa", "lisa@nytt.se")

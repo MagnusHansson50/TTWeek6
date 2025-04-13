@@ -6,11 +6,9 @@ from pages.friend_page import FriendPage
 def step_impl(context):
     context.friend_page.search_friend("lisa")
 
-
 @then(u'ska "Lisa" visas i sökresultatet')
 def step_impl(context):
     assert context.friend_page.friend_name_visible("Lisa")
-
 
 @when(u'jag söker efter "EXAMPLE.COM"')
 def step_impl(context):
