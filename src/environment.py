@@ -15,6 +15,6 @@ def after_scenario(context, scenario):
 
 def after_all(context):
     if context.browser:
-        context.page.close()
+        context.browser.close()
     if context.playwright:
         context.playwright.stop()
